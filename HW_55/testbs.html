@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!--link href="/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet"-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="test2.css">
+  </head>
+  <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+                <ul class="nav navbar-nav">
+                    <li> <a href="#products">Products</a></li>
+		            <li><a href="#signUp">Sign Up</a></li>
+		            <li><a href="#financials">Financials</a></li>
+                    <li><a href="#aboutUs">About Us</a></li>
+                </ul>
+            </div>
+    </nav>
+   
+
+
+      <div class="container">
+           <div class="jumbotron text-center">
+       
+            <div class="text-uppercase">
+             <h1>estuff</h1>
+            </div>
+            <h2>A <em>PCS</em> company</h2>
+        </div>
+     
+
+        <div class="row">
+            <h3 id="products">Products</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit expedita dolorum animi ipsum numquam explicabo. ipsum dolor sit amet, consectetur adipisicing elit. Error beatae 
+                id blanditiis ipsum sapiente modi.</p>
+                 <div class="col-md-4 col-sm-12 text-center">
+                     
+                 <h4> Computers</h4>
+                     <img class=" col-sm-12"src="./test_files/macworld.jpg">
+                      
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing 
+                    elit. Possimus quasi nam non, eaque illo nesciunt iste 
+                    uptatibus? Incidunt, eaque!
+                </p>
+            </div>
+             
+            <div class="col-md-4 col-sm-12 text-center mid">
+                <h4>Choirs</h4>
+                <video  class="col-sm-12"class="video" controls="" preload="none" poster "src="shira.png">
+            <source src="El Hanaar Hazeh.mp4">
+                </video>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Animi soluta voluptates cum quas velit a, neque possimus 
+                officia.
+            </p>
+               
+            </div>
+              
+            <div class="col-md-4 col-sm-12 text-center">
+               <h4> Candy</h4>
+                
+                <img class=" col-sm-12"src="./test_files/candy.png">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing 
+                    elit. Possimus quasi nam non, eaque illo nesciunt iste 
+                    uptatibus? Incidunt, eaque!
+                </p>
+            </div>
+        </div>
+            <div class="jumbotron text-center" "well well-sm">
+             <h3 id="signUp">Sign Me Up!</h3>
+          <form action="processOrder.php" method="post">
+            <label> Name <input class="well well-sm" type="text" name="Name"placeholder="Your name" required/></label>
+            <label>Email <input class="well well-sm"type="email" name="email" placeholder="Your email" required></label>
+            <input class="well well-sm" type="submit" value="Sign me up!">
+          </form>
+            </div>
+    
+
+      <div>
+        <h3 id="financials">Financials</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, exercitationem. Architecto numquam in rerum laborum expedita earum perferendis assumenda eveniet? Similique doloribus vero quaerat ex omnis aspernatur, aut nisi necessitatibus laudantium incidunt repellendus veritatis numquam, quae harum quas dolor nihil.</p>
+      </div>
+         <div class="col-sm-10 col-sm-push-1">
+        <caption><h4> Profits-By Quarter</h4></caption>
+        <table class="table table-bordered table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>1st Quarter profits</th>
+                <th>2nd Quarter profits</th>
+                <th>3rd Quarter profits</th>
+                <th>4th Quarter profits</th>
+                <th>Total</th>
+               
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>2012</th>
+                <td>$42876.98</td>
+                <td>$61567.76</td>
+                <td>$41654.86</td>
+                <td>$28634.90</td>
+                <td id="red">$34639675.35</td>
+               
+                
+            </tr>
+            <tr>
+                <th>2013</th>
+                <td>$49786.98</td>
+                <td>$69321.98</td>
+                <td>$72678.98</td>
+                <td>$24766.99</td>
+                <td id="red">$3478965.98</td>
+               
+               
+            </tr>
+            <tr>
+                <th>2014</th>
+                <td>$45647.84</td>
+                <td>$69387.98</td>
+                <td>$72334.77</td>
+                <td>$64445.88</td>
+                <td id="red">$394567787.98</td>
+                
+                
+            </tr>
+            <tr>
+                <th>2015</th>
+                <td>$44567.87</td>
+                <td>$65433.55</td>
+                <td>$424546.88</td>
+                <td>$24334.78</td>
+                <td id="red">$34543334.98</td>
+                
+               
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="bld">Total</td>
+                <td id="red">$6544436998.98</td>
+           </tr>
+        </tfoot>
+    </table>
+</div>
+
+ <div class="col-sm-12">
+     <h3 id="aboutUs">About Us</h3>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+         Iure in rerum ipsa ullam hic esse, quas repellat, et dolor quod alias
+         et suscipit! Ab suscipit dignissimos tempora qui itaque sapiente ut, 
+         sint quas, ipsa ea distinctio deleniti iure reiciendis.
+          Facere aut incidunt perspiciatis ipsa aspernatur, ex suscipit,
+           quam ipsum molestiae laborum earum provident nobis similique beatae amet
+           periores enim nesciunt, magni dolorum expedita quibusdam assumenda 
+           voluptates non. Nesciunt praesentium quasi dicta cum necessitatibus minima
+            esse aut, velit, aliquid porro earum saepe. Nulla laudantium, fuga, 
+            et reiciendis beatae recusandae earum incidunt, modi aliquid optio 
+            veniam laborum tempore nam. Recusandae.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fugit,
+             laborum ex sint quisquam iure mollitia cum rerum reprehenderit dolore, 
+             a placeat tempore harum reiciendis rem repellendus eos illo, 
+             vitae expedita voluptatibus consectetur facere sequi. Rerum voluptatum 
+             similique repellat amet cum. Voluptates autem porro, suscipit
+              repudiandae voluptate blanditiis, quod facilis. </p>
+</div>
+                  <div class="footer">
+        <div class="container"> 
+           <p> (C) ESTUFF 2015</p>
+        </div>
+           </div>
+      
+      
+  </body>
+
+</html>

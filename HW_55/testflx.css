@@ -1,0 +1,149 @@
+body{
+  /*margin-top: 100px;*/
+   font-family: "helvetica  arial, sans-serif"
+    
+}
+
+
+header,footer
+{color: white;
+ background:black ;
+ width: 100%;
+ padding-left: 62px;
+ position: fixed ;
+}
+header{
+  
+  height: 45px;  
+ top: 0;
+}
+footer{
+   bottom:0 ;
+   padding-left: 100px;
+}
+section{
+    margin-right: 100px ;
+    margin-left: 100px ;
+      padding-top: 45px;
+   /* margin-top: -45px;*/
+}
+@media screen and (min-width: 1000px){
+    article{
+      display: flex;
+     flex-direction: row;
+    }
+}   
+
+li{
+    display: inline;
+    padding-right:30px;
+
+}
+a{
+   text-decoration: none;
+   color: white;
+}
+   a:hover{
+       color:red;
+       text-decoration:underline;
+   }
+
+.title{
+    color: black;
+    background:lightgray;
+    text-align: center;
+    padding: 55px;
+   
+    
+  
+      
+
+}
+h1{
+    text-transform:uppercase;
+    font-size: 45px;
+}
+h4{
+    text-align: center;
+}
+div{
+    text-align:justify;
+}
+@media screen and (min-width: 1000px) {
+            form{
+                 display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+}
+            .mid{
+                padding-right: 8px;
+                padding-left: 8px;
+                margin-right: 8px;
+                margin-left: 8px;
+                border-right: solid black 1px;
+                border-left: solid black 1px;
+                box-sizing: border-box;
+            }     
+          
+        
+        img{
+		              width:100%;
+                      height: 150px;
+                  }
+			video {
+                width: 100%;
+                height:150px;
+                 }
+	.signUp{
+        color: black;
+        background:lightgray;
+        text-align: center;
+        border-radius: 5px;
+        width:85%;
+        padding-top: 10px; 
+        padding-bottom: 15px;
+        }
+         input{
+            border-radius: 5px;
+            box-shadow:  2px  2px 2px 2px black;
+        }
+
+       
+    table {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+       
+    th, td {
+            border: 1px solid black;
+        }
+      tbody td, tfoot th, tfoot td {
+            text-align: right
+      }
+   td:last-of-type {
+                    color: red;
+               }
+        
+   #bld{
+       font-weight: bold;
+       colspan=5;
+   }
+    tbody tr:nth-child(odd) {
+            background-color: lightgrey;
+        }
+        
+     tbody tr:hover {
+            background-color: blue;
+        }
+         th {
+            padding-right: 10px;
+            padding-left: 10px;
+            text-align: center;
+            
+
+        }
+               
+       
+    
+    

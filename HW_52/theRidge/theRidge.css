@@ -1,0 +1,155 @@
+    h1{
+		color:blue;
+		font-size: 65px;
+		border: 4px solid blue;
+		background-color:red;
+		text-align:center;
+		letter-spacing: 25px;
+		line-height: 1.5;
+		text-transform: lower-alpha;
+		text-shadow: 5px 9px 5px white
+	}
+	body{
+		border: 15px solid yellow;
+		margin: none;
+		padding: none;
+				/* background:linear-gradient(45deg, red 0%, white 30%, blue 50%) */
+				/* background-image: url(images/rest.jpg);  */
+		/*max-width: 1200px;*/
+		/*background-repeat: no-repeat;
+			background-size: 250px 250px;*/
+			/* background-clip: border-box - where the picture ends; */
+		/* background-text-align:center; */
+		
+	}	
+	
+	 #logo{
+		width:100%;
+		height:450px;
+		/*padding-left:25%; 
+		text-align:center;*/
+	}
+	.top{
+		text-align:center;
+		
+	}
+	img{
+		width:150px;
+		height:150px;
+		border-radius: 18px;
+		margin-top: 40px;
+	}
+	p{
+		color:white;
+		font-size:25px;
+		background-color:black;
+	}
+
+	a{
+		text-align:center;
+		color: lawngreen;
+	}
+	#loc{
+		/*max-width:150px;
+		height:150px;*/
+		/*display: inline-block !important;*/
+		border: none;
+		}
+		
+		
+	
+	.square {
+			list-style-type: square;
+		}
+		.course{
+		max-width:150px;
+		box-shadow:none;
+		display: inline-block;
+		vertical-align:top;
+		}
+		
+	.outer{
+		border:10px solid black;
+		width:100%;
+		/*display: inline-block;*/
+		/*margin: none;
+		padding: none;*/
+		margin:1px;
+		text-align:center;
+	}	
+	video {
+                width: 33.333%;
+                
+            }	
+	@media screen and (min-width: 600px) {
+			div {
+				display: inline-block;
+				vertical-align: top;
+				width:30%;
+			}
+	}
+	@media screen and (max-width: 599px){
+	div{
+		display: block;
+		
+		/*width:95%;*/
+	   }
+	}	
+		div{
+		text-align:center;
+		
+		border: 4px solid blue;
+		padding-bottom:3px;
+		margin:1px;
+		box-shadow: 0 0 28px 28px cyan inset;	
+		}
+		header, footer {
+            position: fixed;
+            width: 10%;
+            text-align: center;
+            background-color:pink;
+			color: green;
+        }
+		#reg{
+		
+		width: 45% ;
+		display: inline-block;
+				vertical-align: top;
+		}
+
+
+		table {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        caption {
+            border: 3px solid black;
+            color: green;
+            font-size: 3em;
+            border-top: none;
+            caption-side: bottom;
+        }
+        th, td {
+            border: 1px solid black;
+           /* padding: 8px 4px;*/
+        }
+        tbody th, tbody td, tfoot th, tfoot td {
+            text-align: center;
+        }
+        tfoot td {
+            color: red;
+            font-weight: bold;
+        }
+        /*.odd {
+            background-color: lightblue;
+        }*/
+        /*tbody tr:nth-child(2n + 1) {
+            background-color: lightblue;
+        }*/
+        tbody tr:nth-child(even) {
+            background-color: lightgreen;
+        }
+        
+        tbody tr:hover {
+            background-color: lawngreen;
+        }
