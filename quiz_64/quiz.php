@@ -13,21 +13,21 @@
         $db = new PDO($cs, $user, $password, $options);
        
        
-        /*$query = "SELECT DISTINCT name FROM grades ;";
+        $query = "SELECT DISTINCT name FROM grades ;";
         $query .= "SELECT  grade FROM grades";
         $results = $db->query($query);
         $studentGrades = $results->fetchAll();
 
                /* $query1 = "SELECT grade FROM grades";
                 $results1 = $db->query($query1);
-                $studentGrades1 = $results1->fetchAll();
+                $studentGrades1 = $results1->fetchAll();*/
       
            foreach($studentGrades as $studentGrade) {
              echo"$studentGrade[name]";
                foreach($studentGrades as $studentGrade) {
                     echo "$studentGrade[grade]";} 
                     } 
-              */
+              
            
             
              $delete = "DELETE  FROM grades WHERE name = '$selectedStudent' ";
