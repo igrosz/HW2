@@ -1,11 +1,12 @@
 <?php
 $selectedSefer = "";
-$selectedPrice ="";
+ $selectedPrice ="";
  if(isset($_POST["sefer"])) {
             if(empty($_POST["sefer"] || is_numeric($_POST["sefer"]))) {
                 $error = "A valid sefer  must be submitted";
             } else {
                 $selectedSefer = $_POST['sefer'];
+                 
             }
  }
          if(isset($_POST['price'])) {
@@ -13,35 +14,38 @@ $selectedPrice ="";
                 $error = "A valid price must be submitted";
             } else {
                $selectedPrice = $_POST['price'];
+               
             }
          }
 
-    $cs = "mysql:host=localhost;dbname=sefarimStore";
-    $user = "root";
-    $password = null;
-    try {
-        $options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
-        $db = new PDO($cs, $user, $password, $options);
-        
-        $query = "INSERT INTO priceList (name,price)VALUES(:theSefer,:thePrice)";
-         $statement = $db->prepare($query);
-         $statement->bindValue('theSefer',$selectedSefer);
-         $statement->bindValue('thePrice',$selectedPrice);
-         $statement->execute();
-        /*$results = $db->exec($query);*/
-        /*$response = $results->fetch();*/
-        
+                    $cs = "mysql:host=localhost;dbname=sefarimStore";
+                    $user = "root";
+                    $password = null;
+                    try {
+                        $options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
+                        $db = new PDO($cs, $user, $password, $options);
+                      if(isset($_POST["sefer"])) {  
+                        $query = "INSERT INTO priceList (name,price)VALUES(:theSefer,:thePrice)";
+                        $statement = $db->prepare($query);
+                        $statement->bindValue('theSefer',$selectedSefer);
+                        $statement->bindValue('thePrice',$selectedPrice);
+                        
+                        $statement->execute();
+                        echo "<h2> You have successfully added to the database $selectedSefer-$selectedPrice</h2>";
+                        }
+                        
+                    
          
-     echo "<h2> You have successfully added to the database $selectedSefer-$selectedPrice</h2>";
+    
             
             
             
-        }
+        
        
-    catch(PDOException $e) {
-        die("Something went wrong " . $e->getMessage());
-    }
-
+                        }catch(PDOException $e) {
+                            die("Something went wrong " . $e->getMessage());
+                        }
+                            
 ?>
 
 <!DOCTYPE html>
