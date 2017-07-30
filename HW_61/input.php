@@ -28,7 +28,7 @@ function monthOptions(){
 };
  /*function yearOptions(){   
         $y="";
-        for($i =2000; $i < 2020; $i++) {
+        for($i =1582 $i < 2500; $i++) {
              $y.="<option>".
              $i.
               "</option>";
