@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function isUpperCase(element) {
+  return element===element.toUpperCase()
+}
+
+function isLowerCase(element) {
+  return !isUpperCase(element)
+}
+  
+  function ourSome(array,callback)  {
+     for (var i=0; i<array.length;i++){
+        if (callback(array[i])) {
+            return true;
+        }
+       
+    }
+    return false;
+  }
+  console.log (ourSome(['q','m','L','S'],isLowerCase)); 
+
+  console.log(['q','m','L','S'].some(isLowerCase));
+
+  function printIt(it) {
+    console.log(it);
+}
+  
+  function onlyIf(array,test,action)  {
+      var newArray=[]
+     for (var i=0; i<array.length;i++){
+        if (test(array[i])) {
+            newArray.push(array[i]);
+        }
+    }
+    return newArray;
+    for (var i=0; i<newArray.length;i++){
+    newArray[i].action;
+  } 
+}
+
+console.log(onlyIf(['q','A','K','m','L','h','D'],isUpperCase,printIt));
+    </script>
+    
+</body>
+</html>
