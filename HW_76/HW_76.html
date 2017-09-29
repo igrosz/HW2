@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var theMonthUtils = (function () {
+    'use strict';
+
+    var months = ["January", "February", "March ","April", "May","June","July", "August","September","October","November ","December "];
+
+
+    return {
+        getMonthName: function (num) {
+            return months[num-1];
+        },
+        getMonthNumber: function (name) {
+            for (var i = 0; i < months.length; i++) {
+                if (months[i] === name) {
+                    return i+1;
+                }
+            }
+            return "NO SUCH Month!";
+        }
+    };
+}());
+
+console.log("theMonthUtils.getMonthName(6)", theMonthUtils.getMonthName(6));
+console.log('theMonthUtils.getMonthNumber("May")', theMonthUtils.getMonthNumber("May"));
+        
+        
+        </script>
+    
+</body>
+</html>
