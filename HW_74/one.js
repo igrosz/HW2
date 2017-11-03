@@ -11,5 +11,6 @@ function greaterThan(a,b) {
 } 
 
 console.log(greaterThan(5,6));
-console.log(greaterThan(6,5));
-'npm install -g jshint'
+console.()log(greaterThan(6,5));
+
+

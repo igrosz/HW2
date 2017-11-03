@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="contactTable">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="4">No contacts</td>
+            </tr>
+        </tbody>
+    </table><br>
+    <button id="add">Add Contact</button>
+
+
+    <form id="theForm">
+                
+                <label for="firstName">
+                    first Name:
+                    <input id="firstName" required/>
+                </label>
+
+                <label for="lastName">
+                    last Name:
+                <input id="lastName" required/>
+               </label>
+               <br>
+                <label for="email">
+                   email:
+               <input id="email" required/>
+               </label>
+
+              <label for="phone">
+                      Phone:
+               <input id="phone" required/>
+              </label>
+                
+            </form>
+
+    <script src="contacts.js"></script>
+</body>
+
+</html>
