@@ -24,15 +24,8 @@ $selectedSefer = "";
          $statement->bindValue('theSefer',$selectedSefer);
          $statement->execute();
         
-        
-         
-     
-            
-            
-            
-        }
        
-    catch(PDOException $e) {
+   } catch(PDOException $e) {
         die("Something went wrong " . $e->getMessage());
     }
 

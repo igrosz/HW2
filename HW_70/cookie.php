@@ -1,6 +1,6 @@
 <?php
     date_default_timezone_set('America/New_York');
-    $myDate=date("m/d/Y h:i:s a", time());
+    $myDate=date('m/d/Y h:i:s a', time());
     if(!empty($_COOKIE["DateCookie"])) {
        $date = $_COOKIE["DateCookie"];
     } else {
@@ -24,7 +24,7 @@
     <h1>The cookie website</h1>
     <h2>
         <?php if ($date==="null"){
-                echo "We hope you'll enjoy your first visit to our website ";
+                echo "We hope you'll enjoy your first visit to our website ! ";
                 }else{
                     echo"Welcome back!<br>Your last visit was:  ". "$date";
                 } 
