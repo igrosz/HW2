@@ -9,7 +9,7 @@
     var startString = 'Start';
     var stopString = 'Stop';
     var colors = ['blue','red','green', 'black','white','gray','pink' ];
-   // var colors2 = ['red','green','blue', 'black','white','gray','pink'];
+   
 
     function changeColors() {
         if(i < colors.length-1){
@@ -38,7 +38,7 @@
         //if (!running) {
         //if (!intervalId) {
         if (theColorsButton.innerHTML === startString) {
-            intervalId = setInterval(changeColors, 1500);
+            intervalId = setInterval(changeColors, 500);
             theColorsButton.innerHTML = stopString;
             //running = true;
         } else {
