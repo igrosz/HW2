@@ -32,7 +32,7 @@ pcs.tools = (function () {
                                 fontSize -= 5;
                             }
 
-                            //that.setCss("fontSize", fontSize + 'px');
+
                             setCss(elem, "fontSize", fontSize + 'px');
 
                             if (i++ === 20) {
@@ -42,8 +42,8 @@ pcs.tools = (function () {
 
                     return this;
                 },
-                hide:function  () {
-                    originalDisplay= getComputedStyle(elem).display;//getPropertyValue(elem.style.display);
+                hide: function () {
+                    originalDisplay = getComputedStyle(elem).display;
                     elem.style.display = 'none';
                     return this;
                 },
@@ -52,7 +52,7 @@ pcs.tools = (function () {
                     return this;
                 },
                 click: function (theFunction) {
-                    elem.addEventListener("click",theFunction);
+                    elem.addEventListener("click", theFunction);
                     return this;
                 }
             };
