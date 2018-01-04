@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,
+        body,
+        #map {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        #map {
+            width: 75%;
+        }
+
+        #sidebar {
+            float: left;
+            width: 25%;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .controls {
+            text-align: center;
+        }
+
+        #sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #sidebar li {
+            cursor: pointer;
+            border: 1px solid black;
+            margin: 4px;
+        }
+
+        #sidebar li:hover {
+            color: red;
+        }
+
+        #sidebar li img {
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar">
+        <div class="controls">
+            <input id="tag" placeholder="what?" />
+            <input id="numResults" type="number" min="1" max="100" value="10" />
+            <button id="go">Go!</button>
+            <button id="clear">clear</button>
+        </div>
+        <hr/>
+        <ul></ul>
+    </div>
+    <div id="map"></div>
+    <script src="/jquery-3.2.1.min.js"></script>
+    <script src="map.js" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4Xp2PoMZ39fBByP6wVdcfOMKlMFLpFq8&callback=initMap&libraries=drawing"
+        async defer></script>
+</body>
+
+</html>
