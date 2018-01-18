@@ -54,6 +54,7 @@
             }
             if (direction === 38) {
                 ySnake -= 64;
+
             }
 
 
