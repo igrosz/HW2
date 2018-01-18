@@ -1,19 +1,32 @@
-/*global $ */
 (function () {
     "use strict";
-    $("#img").hide();
-    $("#load").click(function () {
-        $("#img").show();
+    function get(id) {
+        return document.getElementById(id);
+    }
+    var div = get("theDiv");
+    var img = get("img");
+    var request = new XMLHttpRequest();
+    img.hide();
+    get('load').addEventListener('click', function () {
+        img.show();
 
-        var fileName = $("#file").val();
+        request.onreadystatechange = function (event) {
 
-        $.get(fileName, function (loadedData) {
-            $("#img").hide();
-            $("#theDiv").text(loadedData);
-        }).fail(function (xhr, statusCode, statusText) {
-            $("#img").hide();
-            $("#theDiv").text("error: " + statusText);
+            if (request.readyState === 4) {
+                if (request.status < 400) {
+                    img.hide();
+                    div.text(request.responseText);
+                } else {
+                    alert("OOPS" + request.statusText);
+                }
+            }
+        };
 
-        });
+        request.open('GET', get('file').value);
+        request.send();
     });
+
+    /*setTimeout(function () {
+        alert(request.responseText);
+    }, 2000);*/
 }());

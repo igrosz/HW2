@@ -1,0 +1,28 @@
+[
+    {
+        "name": "steak",
+        "ingredients": [
+            "meat",
+            "water",
+            "spices"
+        ],
+        "picture": "https://images-na.ssl-images-amazon.com/images/I/61gQ%2BmFq2UL.jpg"
+    },
+    {
+        "name": "peas",
+        "ingredients": [
+            "peas",
+            "water"
+        ],
+        "picture": "https://images-na.ssl-images-amazon.com/images/I/41fUUor+acL._AC_US160_.jpg"
+    },
+    {
+        "name": "potatoes",
+        "ingredients": [
+            "potatoes",
+            "water",
+            "spices"
+        ],
+        "picture": " https://images-na.ssl-images-amazon.com/images/I/21f+X2U5xoL._AC_US160_.jpg"
+    }
+]
