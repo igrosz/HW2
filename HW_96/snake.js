@@ -34,7 +34,7 @@
 
         xSnake = 0;
         ySnake = 0;
-        xApple = 200;
+        xApple = 320;
         yApple = 0;
 
         function move() {
@@ -79,7 +79,7 @@
 
             context.drawImage(img, xSnake, ySnake, 64, 64);
             context.drawImage(img2, xApple, yApple, 64, 64);
-            if (xSnake + 32 === xApple + 32 && ySnake + 32 === yApple + 32) {
+            if (xSnake + 64 === xApple && ySnake === yApple) {
                 console.log("hit");
                 points += 10;
 

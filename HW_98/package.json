@@ -1,0 +1,20 @@
+{
+  "name": "using_webpack",
+  "version": "1.0.0",
+  "main": "u",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  }
+}
